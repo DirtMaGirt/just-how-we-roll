@@ -10,6 +10,7 @@ const twelves = [];
 const twenties = [];
 
 window.onload = init;
+setStartingImages();
 
 function init() {
     const d6Roll = document.querySelector('#d6-roll');
@@ -22,14 +23,14 @@ function init() {
 
     const d12Roll = document.querySelector('#d12-roll');
     d12Roll.addEventListener('click', rollD12);
-    
+
     const d20Roll = document.querySelector('#d20-roll');
     d20Roll.addEventListener('click', rollD20);
 
     const resetButton = document.querySelector('#reset-button')
     resetButton.addEventListener('click', resetAllRolls);
 
-    setStartingImages();
+
 }
 
 function setStartingImages() {
@@ -46,7 +47,7 @@ function setStartingImages() {
 
     const d12Roll = document.querySelector('#d12-roll');
     d12Roll.src = `${START_DIRECTORY}/d12.jpeg`;
-    
+
     const d20Roll = document.querySelector('#d20-roll');
     d20Roll.src = `${START_DIRECTORY}/d20.jpg`;
 }
@@ -56,7 +57,37 @@ function setStartingImages() {
 # = Roll Functions
 # ========================================================
 */
+//Get a random number from 1-6, using Math.random, Math.ceil, and the number 6. Save it somewhere, because we'll be using it
 
+
+function rollD6() {
+    const rollSingle;
+
+}
+
+function rollDoubleD6() {
+    const rollSingle;
+    rollSingle = Math.floor(Math.random() * 6);
+    rollSingle = Math.floor(Math.random() * 6);
+    sixes.push(rollSingle);
+
+}
+
+function rollD12() {
+    const rollSingle;
+    rollSingle = Math.floor(Math.random() * 6);
+    rollSingle = Math.floor(Math.random() * 6);
+    sixes.push(rollSingle);
+
+}
+
+function rollD20() {
+    const rollSingle;
+    rollSingle = Math.floor(Math.random() * 6);
+    rollSingle = Math.floor(Math.random() * 6);
+    sixes.push(rollSingle);
+
+}
 /*
 # ========================================================
 # = Math Functions
@@ -68,4 +99,3 @@ function setStartingImages() {
 # = Helper Functions - Stretch Goals!
 # ========================================================
 */
-
